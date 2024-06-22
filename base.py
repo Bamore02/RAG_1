@@ -1,7 +1,8 @@
 import os
 import pinecone
 from pinecone import Pinecone, ServerlessSpec
-
+from dotenv import load_dotenv
+import os
 
 
 
