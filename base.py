@@ -2,12 +2,10 @@ import os
 import pinecone
 from pinecone import Pinecone, ServerlessSpec
 
-pc = Pinecone(api_key="f4f4c97b-9223-4c4f-8b41-91b89d94dd39")
 
 index_name = "llama-rag-clean"
 
 
-HF_AUTH_TOKEN="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"
 from transformers import set_seed
 
 set_seed(88)
@@ -190,5 +188,4 @@ def retrieval(answer):
     output = re.sub(r'\[INST\].*?\[/INST\]', '', output, flags=re.DOTALL).strip()
     return output
 
-hf_email = 'barbaratfmia@gmail.com'
-hf_pass = 'VDKRR^~M4XDz??M'
+
