@@ -1,6 +1,8 @@
 import streamlit as st
 from hugchat import hugchat
 from hugchat.login import Login
+from dotenv import load_dotenv
+import os
 
 from base import retrieval
 # App title
