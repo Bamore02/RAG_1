@@ -3,7 +3,7 @@ import pinecone
 from pinecone import Pinecone, ServerlessSpec
 
 
-pc = Pinecone(api_key=p_key)
+
 
 index_name = "llama-rag-clean"
 load_dotenv()
@@ -11,7 +11,7 @@ load_dotenv()
 # Obtener las claves desde las variables de entorno
 HF_AUTH_TOKEN = os.getenv("HF_AUTH_TOKEN")
 p_key = os.getenv("p_key")
-
+pc = Pinecone(api_key=p_key)
 from transformers import set_seed
 
 set_seed(88)
