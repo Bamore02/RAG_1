@@ -8,8 +8,8 @@ st.set_page_config(page_title="🤗💬 HugChat")
 load_dotenv()
 
 # Obtener las claves desde las variables de entorno
-api_key = os.getenv("hf_email")
-secret_key = os.getenv("hf_pass")
+hf_email = os.getenv("hf_email")
+hf_pass = os.getenv("hf_pass")
 
    
 # Store LLM generated responses
